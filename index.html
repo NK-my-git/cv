@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nataliia Kravchuk - Senior Support Engineer & Observability Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text-dark: #0f172a;
+            --text-secondary: #475569;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--white);
+            padding: 40px 60px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        /* Section Commons */
+        section {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Summary */
+        .summary p {
+            font-size: 1.05rem;
+            color: var(--text-dark);
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 16px 24px;
+            align-items: baseline;
+            margin-bottom: 12px;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background-color: #eff6ff;
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #dbeafe;
+        }
+
+        /* Skill Composite Badge (for grouped skills like AWS) */
+        .skill-composite {
+            display: inline-flex;
+            flex-wrap: wrap;
+            /* Allow wrapping on very small screens */
+            align-items: stretch;
+            border: 1px solid #dbeafe;
+            border-radius: 6px;
+            overflow: hidden;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .skill-brand {
+            background-color: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-list-text {
+            background-color: #eff6ff;
+            color: #1e40af;
+            padding: 4px 12px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            border-left: 1px solid #dbeafe;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 24px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+            flex-wrap: wrap;
+        }
+
+        .company-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .location {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+
+        .job-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #334155;
+            font-style: italic;
+        }
+
+        .dates {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            background: #f1f5f9;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .job ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .job li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            color: #374151;
+            font-size: 0.95rem;
+        }
+
+        .job li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .tech-stack {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .tech-stack strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 16px;
+        }
+
+        .degree {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .school {
+            color: #374151;
+        }
+
+        /* Footer / Print Button */
+        .no-print {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed var(--border);
+        }
+
+        .btn-print {
+            background-color: var(--text-dark);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-print:hover {
+            background-color: #334155;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px;
+                margin: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                margin-bottom: 16px;
+            }
+
+            .job-header,
+            .job-title-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+
+            .dates {
+                padding: 0;
+                background: none;
+                font-weight: 500;
+            }
+        }
+
+        /* Print Media */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                width: 100%;
+                max-width: none;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: var(--text-dark);
+            }
+
+            .job li {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>NATALIIA KRAVCHUK</h1>
+            <div class="contact-info">
+                <span>Helsinki, Finland</span>
+                <span>|</span>
+                <span>+358469584655</span>
+                <span>|</span>
+                <a href="mailto:kravchuknataly@gmail.com">kravchuknataly@gmail.com</a>
+                <span>|</span>
+                <a href="https://www.linkedin.com/in/nataliia-kravchuk-880270192/" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p><strong>Senior Support Engineer & Observability Specialist</strong> with 10+ years of experience in
+                high-load production environments. Background in <strong>Site Reliability Engineering (SRE)</strong>
+                practices, system monitoring, and complex troubleshooting. Proven track record of designing
+                <strong>Splunk</strong> and <strong>Tableau</strong> dashboards, developing automated alerting systems,
+                and reducing incident detection time by <strong>66%</strong>. Experienced in <strong>AWS cloud
+                    services</strong>, log analysis, and cross-functional collaboration to drive operational excellence
+                and root-cause analysis.
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category">Monitoring</div>
+                <div class="skill-list">
+                    <span class="skill-tag">Splunk (SPL)</span>
+                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">Tableau Desktop</span>
+                    <span class="skill-tag">Datadog</span>
+                    <span class="skill-tag">CloudWatch</span>
+                    <span class="skill-tag">RCA</span>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">Automation</div>
+                <div class="skill-list">
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Alerting Logic</span>
+                    <span class="skill-tag">Incident Management</span>
+                    <span class="skill-tag">Python</span>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">Tools</div>
+                <div class="skill-list">
+                    <span class="skill-tag">Jira</span>
+                    <span class="skill-tag">Salesforce</span>
+                    <span class="skill-tag">Confluence</span>
+                    <span class="skill-tag">DataGrip</span>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">Cloud Platforms</div>
+                <div class="skill-list">
+                    <div class="skill-composite">
+                        <span class="skill-brand">AWS</span>
+                        <span class="skill-list-text">Athena, CloudWatch, S3, Step Functions, Lambda</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2>Work Experience</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="company-name">AMAZON</span>
+                    <span class="location">Helsinki, Finland</span>
+                </div>
+                <div class="job-title-row">
+                    <span class="job-title">Support Engineer (Observability & SRE)</span>
+                    <span class="dates">Jan 2023 - Present</span>
+                </div>
+                <ul>
+                    <li><strong>Metric Standardization:</strong> Architected a unified metric standard across 4
+                        platforms, ensuring consistent and reliable monitoring for critical business services.</li>
+                    <li><strong>Incident Reduction:</strong> Designed and deployed Splunk-based live monitoring systems,
+                        reducing issue detection time <strong>from 36 hours to 12 hours (66% reduction)</strong>,
+                        significantly improving incident response effectiveness.</li>
+                    <li><strong>Automation:</strong> Developed and maintained logic for an automated alerting system,
+                        including alert generation, ticket assignment, and escalation workflows to reduce manual toil.
+                    </li>
+                    <li><strong>Dashboards:</strong> Built and optimized monitoring dashboards in Tableau and Splunk to
+                        support data-driven decision-making and rapid incident response.</li>
+                    <li><strong>Operational Excellence:</strong> Authored <strong>10+ critical runbooks</strong> and
+                        technical documentation that streamlined troubleshooting procedures and reduced Mean Time To
+                        Resolve (MTTR).</li>
+                    <li><strong>Collaboration:</strong> Partnered with Engineering, Product, and QA teams to drive
+                        system reliability improvements and performance tuning.</li>
+                </ul>
+                <div class="tech-stack">
+                    <strong>Environment:</strong> AWS (Athena, CloudWatch, S3), Splunk, Tableau, Tableau Desktop,
+                    Python, Jira.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="company-name">SQUAD (Contractor for Amazon)</span>
+                    <span class="location">Kyiv, Ukraine</span>
+                </div>
+                <div class="job-title-row">
+                    <span class="job-title">Support Engineer (Observability & SRE)</span>
+                    <span class="dates">Dec 2019 – Dec 2022</span>
+                </div>
+                <ul>
+                    <li><strong>High-Scale Impact:</strong> Conducted in-depth analysis to resolve critical system
+                        issues, resulting in a <strong>25% improvement</strong> in key service performance metrics
+                        across a fleet of <strong>7 million+ devices</strong>.</li>
+                    <li><strong>Complex Troubleshooting:</strong> Delivered top-tier performance by resolving the
+                        highest volume of complex support tickets, utilizing deep technical analysis to enhance customer
+                        experience.</li>
+                    <li><strong>Feature Rollouts:</strong> Led critical investigations during high-priority feature
+                        launches, proactively identifying issues to prevent customer impact and ensure successful
+                        deployment.</li>
+                    <li><strong>Analytics:</strong> Monitored daily performance metrics for cloud services and 15+
+                        device types, identifying anomalies using advanced data analysis tools.</li>
+                </ul>
+                <div class="tech-stack">
+                    <strong>Environment:</strong> Splunk, Tableau, Tableau Desktop, Cloud Services, Data Analysis Tools,
+                    Monitoring.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="company-name">INFOPULSE (Contractor for BICS)</span>
+                    <span class="location">Kyiv, Ukraine</span>
+                </div>
+                <div class="job-title-row">
+                    <span class="job-title">First Line Service Engineer</span>
+                    <span class="dates">Jun 2015 – Dec 2019</span>
+                </div>
+                <ul>
+                    <li><strong>Service Reliability:</strong> Monitored real-time service performance and executed
+                        proactive corrective actions to maintain SLA compliance.</li>
+                    <li><strong>Optimization:</strong> Recommended and implemented network traffic optimization measures
+                        to enhance service reliability.</li>
+                    <li><strong>Process Improvement:</strong> Developed internal documentation, tutorials, and process
+                        guidelines to accelerate onboarding and streamline team operations.</li>
+                    <li><strong>Mentorship:</strong> Mentored new team members and conducted technical workshops to
+                        improve overall team capability.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="company-name">LLC “Astelit”</span>
+                    <span class="location">Kyiv, Ukraine</span>
+                </div>
+                <div class="job-title-row">
+                    <span class="job-title">Telecom Engineer</span>
+                    <span class="dates">Aug 2013 – Jun 2015</span>
+                </div>
+                <ul>
+                    <li><strong>Automation:</strong> Developed <strong>SQL queries</strong>, packages, and procedures in
+                        Oracle DBMS to automate workflows and improve request processing efficiency.</li>
+                    <li><strong>Analysis:</strong> Analyzed network performance statistics to identify anomalies and
+                        provide data-driven insights for engineering teams.</li>
+                    <li><strong>Reporting:</strong> Prepared detailed technical reports using BPMS and Maximo to support
+                        strategic decision-making.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+
+            <div class="education-item">
+                <div class="job-header">
+                    <span class="company-name">National Technical University of Ukraine “Kyiv Polytechnic
+                        Institute”</span>
+                </div>
+                <div class="job-title-row">
+                    <span class="degree">Master’s degree in Telecommunication Systems</span>
+                    <span class="dates">2014 – 2016</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="no-print">
+            <button class="btn-print" onclick="window.print()">Download PDF / Print</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
