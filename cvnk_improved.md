@@ -15,11 +15,10 @@ Helsinki, Finland | +358469584655 | kravchuknataly@gmail.com | [LinkedIn](https:
 ### **QOCO** | Helsinki, Finland
 **Senior Support Engineer** | *Mar 2026 - Present*
 
-**Key responsibilities:**
-*   [Add responsibilities.]
-
-**Key achievements:**
-*   [Add achievements.]
+*   **Process Optimization & Documentation:** Designed and established operational workflows, including a 24/7 on-call rotation framework, alert response runbooks, and a standardized customer complaint handling process.
+*   **Incident Investigation & Testing:** Investigated alerts and customer complaints across Production and UAT environments; conducted functional testing on new features and solutions to identify and report bugs early.
+*   **Alert Logic Optimization:** Refined and optimized alerting logic and trigger conditions to eliminate alert fatigue, minimize false alarms, and enhance detection accuracy.
+*   **Product & Workflow Improvement:** Analyzed system workflows and feature behavior to uncover product gaps, delivering actionable recommendations to engineering and product teams to enhance overall quality and user experience.
 
 ### **AMAZON** | Helsinki, Finland
 **Support Engineer (Observability & SRE)** | *Jan 2023 - Feb 2026*
