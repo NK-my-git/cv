@@ -7,7 +7,7 @@ Support Engineer with 10+ years of experience in system monitoring, observabilit
 
 WORK EXPERIENCE
 
-QOCO                                                                                 Helsinki, Finland
+QOCO Systems Ltd                                                                     Helsinki, Finland
 
 Senior Support Engineer                                                                 Mar 2026 - Present
 

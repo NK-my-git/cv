@@ -12,7 +12,7 @@ Helsinki, Finland | +358469584655 | kravchuknataly@gmail.com | [LinkedIn](https:
 
 ## WORK EXPERIENCE
 
-### **QOCO** | Helsinki, Finland
+### **QOCO Systems Ltd** | Helsinki, Finland
 **Senior Support Engineer** | *Mar 2026 - Present*
 
 *   **Process Optimization & Documentation:** Designed and established operational workflows, including a 24/7 on-call rotation framework, alert response runbooks, and a standardized customer complaint handling process.
