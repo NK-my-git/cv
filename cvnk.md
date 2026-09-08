@@ -85,7 +85,7 @@ Bachelor’s degree in Telecommunication Systems 			                            
 
                SKILLS         	
 Monitoring & Analytics: 
-Splunk  ∙  Tableau  ∙  Root Cause Analysis  ∙  Incident Management  ∙  Alerting Logic  ∙  Cross-Team Escalation  ∙  Logs and Data  ∙  Analysis ∙ Amazon Athena  ∙   CloudWatch  ∙   Step Functions  ∙   Datadog  ∙  S3
+Splunk  ∙  Tableau  ∙  Grafana  ∙  Root Cause Analysis  ∙  Incident Management  ∙  Alerting Logic  ∙  Cross-Team Escalation  ∙  Logs and Data  ∙  Analysis ∙ Amazon Athena  ∙   CloudWatch  ∙   Step Functions  ∙   Datadog  ∙  S3  ∙  MS Azure
 
 Databases:
 Oracle SQL  ∙  MySQL

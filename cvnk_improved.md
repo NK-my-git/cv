@@ -5,10 +5,10 @@ Helsinki, Finland | +358469584655 | kravchuknataly@gmail.com | [LinkedIn](https:
 **Senior Support Engineer & Observability Specialist** with 10+ years of experience in high-load production environments. Background in **Site Reliability Engineering (SRE)** practices, system monitoring, and complex troubleshooting. Proven track record of designing **Splunk** and **Tableau** dashboards, developing automated alerting systems, and reducing incident detection time by **66%**. Experienced in **AWS cloud services**, log analysis, and cross-functional collaboration to drive operational excellence and root-cause analysis.
 
 ## TECHNICAL SKILLS
-*   **Monitoring & Observability:** Splunk (SPL), Tableau, Tableau Desktop, Datadog, CloudWatch, Root Cause Analysis (RCA)
+*   **Monitoring & Observability:** Splunk (SPL), Tableau, Tableau Desktop, Datadog, CloudWatch, Grafana, Root Cause Analysis (RCA)
 *   **Automation & Scripting:** SQL, Alerting Logic, Incident Management, Python
 *   **Tools:** Jira, Salesforce, Confluence, DataGrip
-*   **Cloud Platforms:** AWS, Athena, CloudWatch, S3, Step Functions, Lambda
+*   **Cloud Platforms:** AWS, Athena, CloudWatch, S3, Step Functions, Lambda, MS Azure
 
 ## WORK EXPERIENCE
 
