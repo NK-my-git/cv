@@ -7,9 +7,18 @@ Support Engineer with 10+ years of experience in system monitoring, observabilit
 
 WORK EXPERIENCE
 
+QOCO                                                                                 Helsinki, Finland
+
+Senior Support Engineer                                                                 Mar 2026 - Present
+
+Key responsibilities:
+[Add responsibilities.]
+Key achievements:
+[Add achievements.]
+
 AMAZON				                    	       		                    	                          Helsinki, Finland
 
-Support Engineer 	                                                                                                                                Jan 2023 - Present
+Support Engineer 	                                                                                                                                Jan 2023 - Feb 2026
 
 Key responsibilities:
 Build and maintain monitoring dashboards in Tableau and Splunk to support data-driven decision-making and incident response.

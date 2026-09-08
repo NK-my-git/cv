@@ -12,8 +12,17 @@ Helsinki, Finland | +358469584655 | kravchuknataly@gmail.com | [LinkedIn](https:
 
 ## WORK EXPERIENCE
 
+### **QOCO** | Helsinki, Finland
+**Senior Support Engineer** | *Mar 2026 - Present*
+
+**Key responsibilities:**
+*   [Add responsibilities.]
+
+**Key achievements:**
+*   [Add achievements.]
+
 ### **AMAZON** | Helsinki, Finland
-**Support Engineer (Observability & SRE)** | *Jan 2023 - Present*
+**Support Engineer (Observability & SRE)** | *Jan 2023 - Feb 2026*
 
 *   **Metric Standardization:** Architected a unified metric standard across 4 platforms, ensuring consistent and reliable monitoring for critical business services.
 *   **Incident Reduction:** Designed and deployed Splunk-based live monitoring systems, reducing issue detection time **from 36 hours to 12 hours (66% reduction)**, significantly improving incident response effectiveness.
